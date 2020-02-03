@@ -1,0 +1,7 @@
+1) for any POJO class to be a bean we need to specify by using @component annotation
+2) there are two scop for standalone class 1)singleton 2) prototype.
+	Singleton: object of bean created only once while initializing the spring container, 
+				no matter how many time object of this bean is called
+	Prototype: object of this bean is created only when we call the bean. no of times bean is
+				called same no of object is created. object of this bean is not created when
+				spring container is initializing. @scop(value="prototype") annotation
