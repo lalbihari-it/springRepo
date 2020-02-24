@@ -1,0 +1,18 @@
+hello.vicky=Hello Vicky
+my.app=Spring Boot Config
+app.discription=Welcome to ${my.app}
+#This properties can be overide by creting application.properties (same name) and keep with paraller
+#to jar
+#And we can also provide commad line argumant to overide properties
+#java -jar jar_name --hello.vicky="Hello Vicky"
+list.value=one,two,three
+#Reading value as key value pair
+my.dbvalue={url: 'http://localhost:8080/restdb', username:'vicky',pass:'pass'}
+
+db.connection={url: 'http://localhost:8080/restdb', username:'vicky',pass:'pass'}
+db.host=127.0.0.1
+db.port=9999
+
+#this will expose every porperties on this endpoints http://localhost:8080/actuator/configprops
+# we can expose selective properties
+management.endpoints.web.exposure.include=*
