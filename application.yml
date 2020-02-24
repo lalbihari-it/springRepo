@@ -2,7 +2,7 @@ hello:
    vicky: Hello Vicky
 my:
    app: Spring Boot Config
-   dbvalue: "{url: 'http://localhost:8080/restdb', username:'vicky',pass:'pass'}"
+   dbvalue: "{url: 'http://localhost:8080/restdb', username:'config-servers',pass:'pass'}"
 app:
    discription: Welcome to ${my.app}
 #This properties can be overide by creting application.properties (same name) and keep with paraller
@@ -14,7 +14,7 @@ list.value: one,two,three
    
 
 db:
-   connection: "{url:'http://localhost:8080/restdb', username:'vicky',pass:'pass'}"
+   connection: "{url:'http://localhost:8080/restdb', username:'config-server',pass:'pass'}"
    host: 127.0.0.1
    port: 9999
 
